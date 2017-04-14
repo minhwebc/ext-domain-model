@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80B4E3F1E9DFA9E007EB89B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B4E3E1E9DFA9E007EB89B /* main.swift */; };
+		A800A7531E9EDF0A0043D171 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B4E3E1E9DFA9E007EB89B /* main.swift */; };
+		A800A7541E9EDF0A0043D171 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B4E3E1E9DFA9E007EB89B /* main.swift */; };
+		A800A7551E9EE08C0043D171 /* ExtDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B4E4B1E9DFAF8007EB89B /* ExtDomainModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,20 @@
 /* Begin PBXFileReference section */
 		A80B4E3B1E9DFA9E007EB89B /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80B4E3E1E9DFA9E007EB89B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A80B4E491E9DFAF8007EB89B /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80B4E4B1E9DFAF8007EB89B /* ExtDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtDomainModelTests.swift; sourceTree = "<group>"; };
+		A80B4E4D1E9DFAF8007EB89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A80B4E381E9DFA9E007EB89B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B4E461E9DFAF8007EB89B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				A80B4E3D1E9DFA9E007EB89B /* ExtDomainModel */,
+				A80B4E4A1E9DFAF8007EB89B /* ExtDomainModelTests */,
 				A80B4E3C1E9DFA9E007EB89B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A80B4E3B1E9DFA9E007EB89B /* ExtDomainModel */,
+				A80B4E491E9DFAF8007EB89B /* ExtDomainModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +74,15 @@
 				A80B4E3E1E9DFA9E007EB89B /* main.swift */,
 			);
 			path = ExtDomainModel;
+			sourceTree = "<group>";
+		};
+		A80B4E4A1E9DFAF8007EB89B /* ExtDomainModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80B4E4B1E9DFAF8007EB89B /* ExtDomainModelTests.swift */,
+				A80B4E4D1E9DFAF8007EB89B /* Info.plist */,
+			);
+			path = ExtDomainModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +105,23 @@
 			productReference = A80B4E3B1E9DFA9E007EB89B /* ExtDomainModel */;
 			productType = "com.apple.product-type.tool";
 		};
+		A80B4E481E9DFAF8007EB89B /* ExtDomainModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80B4E4E1E9DFAF8007EB89B /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */;
+			buildPhases = (
+				A80B4E451E9DFAF8007EB89B /* Sources */,
+				A80B4E461E9DFAF8007EB89B /* Frameworks */,
+				A80B4E471E9DFAF8007EB89B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtDomainModelTests;
+			productName = ExtDomainModelTests;
+			productReference = A80B4E491E9DFAF8007EB89B /* ExtDomainModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +133,10 @@
 				ORGANIZATIONNAME = "Quan Nguyen";
 				TargetAttributes = {
 					A80B4E3A1E9DFA9E007EB89B = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					A80B4E481E9DFAF8007EB89B = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,16 +155,36 @@
 			projectRoot = "";
 			targets = (
 				A80B4E3A1E9DFA9E007EB89B /* ExtDomainModel */,
+				A80B4E481E9DFAF8007EB89B /* ExtDomainModelTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80B4E471E9DFAF8007EB89B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A80B4E371E9DFA9E007EB89B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80B4E3F1E9DFA9E007EB89B /* main.swift in Sources */,
+				A800A7541E9EDF0A0043D171 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B4E451E9DFAF8007EB89B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A800A7531E9EDF0A0043D171 /* main.swift in Sources */,
+				A800A7551E9EE08C0043D171 /* ExtDomainModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +297,32 @@
 			};
 			name = Release;
 		};
+		A80B4E4F1E9DFAF8007EB89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.qn611996.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A80B4E501E9DFAF8007EB89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.qn611996.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -252,6 +342,16 @@
 				A80B4E441E9DFA9E007EB89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80B4E4E1E9DFAF8007EB89B /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80B4E4F1E9DFAF8007EB89B /* Debug */,
+				A80B4E501E9DFAF8007EB89B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
